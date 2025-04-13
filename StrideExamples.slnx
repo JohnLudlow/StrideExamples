@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="StrideExamples.Material/StrideExamples.Material.csproj" />
   <Project Path="StrideExamples.MeshLine.Game/StrideExamples.MeshLine.Game.csproj" />
   <Project Path="StrideExamples.StrideUI.CapsuleAndRigidBody/StrideExamples.StrideUI.CapsuleAndRigidBody.csproj" />
   <Project Path="StrideExamples.StrideUI.Grid/StrideExamples.StrideUI.Grid.csproj" />
