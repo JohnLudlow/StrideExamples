@@ -1,4 +1,6 @@
 <Solution>
+  <Project Path="StrideExamples.CollisionGroup/StrideExamples.CollisionGroup.csproj" />
+  <Project Path="StrideExamples.CollisionLayer/StrideExamples.CollisionLayer.csproj" />
   <Project Path="StrideExamples.CylinderMesh/StrideExamples.CylinderMesh.csproj" />
   <Project Path="StrideExamples.Material/StrideExamples.Material.csproj" />
   <Project Path="StrideExamples.MeshLine.Game/StrideExamples.MeshLine.Game.csproj" />
