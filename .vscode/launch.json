@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+          "name": "C#: StrideExamples.MeshLine.Game Debug",
+          "type": "dotnet",
+          "request": "launch",
+          "projectPath": "${workspaceFolder}/StrideExamples.MeshLine.Game/StrideExamples.MeshLine.Game.csproj"
+        },
+
+        {
+          "name": "C#: StrideExamples.StrideUI.CapsuleAndRigidBody Debug",
+          "type": "dotnet",
+          "request": "launch",
+          "projectPath": "${workspaceFolder}/StrideExamples.StrideUI.CapsuleAndRigidBody/StrideExamples.StrideUI.CapsuleAndRigidBody.csproj"
+        },
+
+        {
+          "name": "C#: StrideExamples.StrideUI.Grid Debug",
+          "type": "dotnet",
+          "request": "launch",
+          "projectPath": "${workspaceFolder}/StrideExamples.StrideUI.Grid/StrideExamples.StrideUI.Grid.csproj"
+        },
+
+        {
+          "name": "C#: StrideExamples.Material Debug",
+          "type": "dotnet",
+          "request": "launch",
+          "projectPath": "${workspaceFolder}/StrideExamples.Material/StrideExamples.Material.csproj"
+        },
+
+        {
+          "name": "C#: StrideExamples.ProceduralGeometry Debug",
+          "type": "dotnet",
+          "request": "launch",
+          "projectPath": "${workspaceFolder}/StrideExamples.ProceduralGeometry/StrideExamples.ProceduralGeometry.csproj"
+        },
+
+        {
+          "name": "C#: StrideExamples.CylinderMesh Debug",
+          "type": "dotnet",
+          "request": "launch",
+          "projectPath": "${workspaceFolder}/StrideExamples.CylinderMesh/StrideExamples.CylinderMesh.csproj"
+        }
+    ]
+}
