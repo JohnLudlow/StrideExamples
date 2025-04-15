@@ -3,6 +3,7 @@
   <Project Path="StrideExamples.Material/StrideExamples.Material.csproj" />
   <Project Path="StrideExamples.MeshLine.Game/StrideExamples.MeshLine.Game.csproj" />
   <Project Path="StrideExamples.PartialTorus/StrideExamples.PartialTorus.csproj" />
+  <Project Path="StrideExamples.Particles/StrideExamples.Particles.csproj" />
   <Project Path="StrideExamples.ProceduralGeometry/StrideExamples.ProceduralGeometry.csproj" />
   <Project Path="StrideExamples.StrideUI.CapsuleAndRigidBody/StrideExamples.StrideUI.CapsuleAndRigidBody.csproj" />
   <Project Path="StrideExamples.StrideUI.Grid/StrideExamples.StrideUI.Grid.csproj" />
