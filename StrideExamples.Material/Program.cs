@@ -3,7 +3,6 @@ using Stride.CommunityToolkit.Engine;
 using Stride.CommunityToolkit.Rendering.ProceduralModels;
 using Stride.CommunityToolkit.Scripts.Utilities;
 using Stride.CommunityToolkit.Skyboxes;
-using Stride.CommunityToolkit.DebugShapes.Code;
 using Stride.Core.Mathematics;
 using Stride.Engine;
 using Stride.Games;

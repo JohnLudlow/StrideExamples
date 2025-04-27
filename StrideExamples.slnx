@@ -10,4 +10,5 @@
   <Project Path="StrideExamples.Raycast/StrideExamples.Raycast.csproj" />
   <Project Path="StrideExamples.StrideUI.CapsuleAndRigidBody/StrideExamples.StrideUI.CapsuleAndRigidBody.csproj" />
   <Project Path="StrideExamples.StrideUI.Grid/StrideExamples.StrideUI.Grid.csproj" />
+  <Project Path="StrideExamples.TextureCanvas/StrideExamples.TextureCanvas.csproj" />
 </Solution>
