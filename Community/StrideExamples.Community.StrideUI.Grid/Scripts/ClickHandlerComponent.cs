@@ -3,12 +3,9 @@ using Stride.CommunityToolkit.Engine;
 using Stride.CommunityToolkit.Rendering.ProceduralModels;
 using Stride.Core.Mathematics;
 using Stride.Engine;
-using Stride.Graphics;
 using Stride.Input;
-using Stride.Physics;
 using Stride.Rendering;
 using StrideExamples.StrideUI.Grid.Managers;
-using System.ComponentModel;
 using System.Diagnostics;
 
 namespace StrideExamples.StrideUI.Grid.Scripts;
