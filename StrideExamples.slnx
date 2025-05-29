@@ -1,9 +1,19 @@
 <Solution>
-  <Project Path="StrideExamples.CylinderMesh/StrideExamples.CylinderMesh.csproj" />
-  <Project Path="StrideExamples.Material/StrideExamples.Material.csproj" />
-  <Project Path="StrideExamples.MeshLine.Game/StrideExamples.MeshLine.Game.csproj" />
-  <Project Path="StrideExamples.PartialTorus/StrideExamples.PartialTorus.csproj" />
-  <Project Path="StrideExamples.ProceduralGeometry/StrideExamples.ProceduralGeometry.csproj" />
-  <Project Path="StrideExamples.StrideUI.CapsuleAndRigidBody/StrideExamples.StrideUI.CapsuleAndRigidBody.csproj" />
-  <Project Path="StrideExamples.StrideUI.Grid/StrideExamples.StrideUI.Grid.csproj" />
+  <Folder Name="/Community/">
+    <Project Path="Community/StrideExamples.Community.CylinderMesh/StrideExamples.Community.CylinderMesh.csproj" />
+    <Project Path="Community/StrideExamples.Community.Material/StrideExamples.Community.Material.csproj" />
+    <Project Path="Community/StrideExamples.Community.MeshLine.Game/StrideExamples.Community.MeshLine.Game.csproj" />
+    <Project Path="Community/StrideExamples.Community.PartialTorus/StrideExamples.Community.PartialTorus.csproj" />
+    <!--<Project Path="Community/StrideExamples.Community.Particles/StrideExamples.Community.Particles.csproj" />-->
+    <Project Path="Community/StrideExamples.Community.ProceduralGeometry/StrideExamples.Community.ProceduralGeometry.csproj" />
+    <Project Path="Community/StrideExamples.Community.StrideUI.CapsuleAndRigidBody/StrideExamples.Community.StrideUI.CapsuleAndRigidBody.csproj" />
+    <Project Path="Community/StrideExamples.Community.StrideUI.Grid/StrideExamples.Community.StrideUI.Grid.csproj" />
+  </Folder>
+  <Folder Name="/SplashScreenExamples/">
+    <Project Path="SplashScreenExamples/StrideExamples.SplashScreen.CodeOnly/StrideExamples.SplashScreen.CodeOnly.csproj" />
+  </Folder>
+  <Folder Name="/SplashScreenExamples/Resources/" />
+  <Folder Name="/SplashScreenExamples/Resources/Images/">
+    <File Path="SplashScreenExamples/Resources/Images/stride-logo-readme-white.png" />
+  </Folder>
 </Solution>

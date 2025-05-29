@@ -9,6 +9,7 @@ using Stride.Rendering;
 using Stride.Rendering.Materials;
 using Stride.Rendering.Materials.ComputeColors;
 
+
 /*
   Procedural Cylinder Mesh Generation
 
@@ -34,7 +35,7 @@ const float Length = 8;
 
 using var game = new Game();
 
-game.Run(start: (Scene rootScene) =>
+game.Run(start: rootScene =>
 {
     game.SetupBase3DScene();
     game.AddSkybox();
