@@ -15,8 +15,7 @@ Console.WriteLine("Hello, World!");
 
 var game = new Game();
 
-game.Run(start: (Scene rootScene) =>
-{
+game.Run(start: rootScene => {
     // Set up the base 3D scene
     game.SetupBase3DScene();
     game.AddDirectionalLight();    
