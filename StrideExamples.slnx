@@ -1,16 +1,22 @@
 <Solution>
-  <Project Path="StrideExamples.CollisionGroup/StrideExamples.CollisionGroup.csproj" />
-  <Project Path="StrideExamples.CollisionLayer/StrideExamples.CollisionLayer.csproj" />
-  <Project Path="StrideExamples.CylinderMesh/StrideExamples.CylinderMesh.csproj" />
-  <Project Path="StrideExamples.DebugShapes/StrideExamples.DebugShapes.csproj" />
-  <Project Path="StrideExamples.GalaxyCreator/StrideExamples.GalaxyCreator.csproj" />
-  <Project Path="StrideExamples.Material/StrideExamples.Material.csproj" />
-  <Project Path="StrideExamples.MeshLine.Game/StrideExamples.MeshLine.Game.csproj" />
-  <Project Path="StrideExamples.PartialTorus/StrideExamples.PartialTorus.csproj" />
-  <Project Path="StrideExamples.Particles/StrideExamples.Particles.csproj" />
-  <Project Path="StrideExamples.ProceduralGeometry/StrideExamples.ProceduralGeometry.csproj" />
-  <Project Path="StrideExamples.Raycast/StrideExamples.Raycast.csproj" />
-  <Project Path="StrideExamples.StrideUI.CapsuleAndRigidBody/StrideExamples.StrideUI.CapsuleAndRigidBody.csproj" />
-  <Project Path="StrideExamples.StrideUI.Grid/StrideExamples.StrideUI.Grid.csproj" />
-  <Project Path="StrideExamples.TextureCanvas/StrideExamples.TextureCanvas.csproj" />
+  <Folder Name="/Community/">
+    <Folder Name="/Community/SignalR_And_Blazor/">
+      <Project Path="Community/SignalR_And_Blazor/StrideExamples.Community.SignalrAndBlazor.Console/StrideExamples.Community.SignalrAndBlazor.Console.csproj" />
+      <Project Path="Community/SignalR_And_Blazor/StrideExamples.Community.SignalrAndBlazor.Core/StrideExamples.Community.SignalrAndBlazor.Core.csproj" />
+    </Folder>
+    <Project Path="Community/StrideExamples.Community.CollisionGroup/StrideExamples.Community.CollisionGroup.csproj" />
+    <Project Path="Community/StrideExamples.Community.CollisionLayer/StrideExamples.Community.CollisionLayer.csproj" />
+    <Project Path="Community/StrideExamples.Community.CylinderMesh/StrideExamples.Community.CylinderMesh.csproj" />
+    <Project Path="Community/StrideExamples.Community.DebugShapes/StrideExamples.Community.DebugShapes.csproj" />
+    <Project Path="Community/StrideExamples.Community.GalaxyCreator/StrideExamples.Community.GalaxyCreator.csproj" />
+    <Project Path="Community/StrideExamples.Community.Material/StrideExamples.Community.Material.csproj" />
+    <Project Path="Community/StrideExamples.Community.MeshLine.Game/StrideExamples.Community.MeshLine.Game.csproj" />
+    <Project Path="Community/StrideExamples.Community.PartialTorus/StrideExamples.Community.PartialTorus.csproj" />
+    <Project Path="Community/StrideExamples.Community.Particles/StrideExamples.Community.Particles.csproj" />
+    <Project Path="Community/StrideExamples.Community.ProceduralGeometry/StrideExamples.Community.ProceduralGeometry.csproj" />
+    <Project Path="Community/StrideExamples.Community.Raycast/StrideExamples.Community.Raycast.csproj" />
+    <Project Path="Community/StrideExamples.Community.StrideUI.CapsuleAndRigidBody/StrideExamples.Community.StrideUI.CapsuleAndRigidBody.csproj" />
+    <Project Path="Community/StrideExamples.Community.StrideUI.Grid/StrideExamples.Community.StrideUI.Grid.csproj" />
+    <Project Path="Community/StrideExamples.Community.TextureCanvas/StrideExamples.Community.TextureCanvas.csproj" />
+  </Folder>
 </Solution>
