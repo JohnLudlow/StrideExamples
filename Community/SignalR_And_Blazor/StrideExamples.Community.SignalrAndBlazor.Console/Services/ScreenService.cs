@@ -1,13 +1,13 @@
 using Microsoft.AspNetCore.SignalR.Client;
 using StrideExamples.SignalrAndBlazor.Console.Core;
-using StrideExamples.SignalrAndBlazor.Core.Dtos;
-using StrideExamples.SignalrAndBlazor.Core.Interfaces;
+using StrideExamples.Community.SignalrAndBlazor.Core.Interfaces;
+using StrideExamples.Community.SignalrAndBlazor.Core.Dtos;
 
-namespace StrideExamples.SignalrAndBlazor.Console.Services
+namespace StrideExamples.Community.SignalrAndBlazor.Console.Services
 {
     public class ScreenService
     {
-        private HubConnection HubConnection { get; set; }
+        public HubConnection HubConnection { get; private init; }
 
         public ScreenService()
         {

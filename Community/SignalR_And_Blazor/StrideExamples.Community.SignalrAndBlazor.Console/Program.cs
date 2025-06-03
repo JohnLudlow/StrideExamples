@@ -1,8 +1,11 @@
 ﻿using Stride.CommunityToolkit.Bepu;
 using Stride.CommunityToolkit.Engine;
+using Stride.CommunityToolkit.Rendering.ProceduralModels;
 using Stride.CommunityToolkit.Skyboxes;
+using Stride.Core.Mathematics;
 using Stride.Engine;
-using StrideExamples.SignalrAndBlazor.Console.Services;
+using StrideExamples.Community.SignalrAndBlazor.Console.Services;
+using StrideExamples.SignalrAndBlazor.Console.Scripts;
 
 using var game = new Game();
 
@@ -14,8 +17,14 @@ game.Run(start: (Scene rootScene) =>
     game.AddSkybox();
     game.AddProfiler();
 
-    var screenManager = new Entity("")
+    var screenManager = new Entity("ScreenManager")
     {
-        // TODO: new ScreenManagerScript()
+        new ScreenManagerScript()
     };
+
+    screenManager.Scene = rootScene;
+
+    var entity = game.Create3DPrimitive(PrimitiveModelType.Capsule);
+    entity.Transform.Position = new Vector3(0, 8, 0);
+    entity.Scene = rootScene;
 });

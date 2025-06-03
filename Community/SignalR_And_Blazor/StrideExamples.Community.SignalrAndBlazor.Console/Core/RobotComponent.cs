@@ -1,6 +1,6 @@
 using System;
 using Stride.Engine;
-using StrideExamples.SignalrAndBlazor.Core.Core;
+using StrideExamples.Community.SignalrAndBlazor.Core.Core;
 
 namespace StrideExamples.SignalrAndBlazor.Console.Core;
 

@@ -1,9 +1,10 @@
 <Solution>
+  <Folder Name="/Community/SignalR_And_Blazor/">
+    <Project Path="Community/SignalR_And_Blazor/StrideExamples.Community.SignalrAndBlazor.Console/StrideExamples.Community.SignalrAndBlazor.Console.csproj" />
+    <Project Path="Community/SignalR_And_Blazor/StrideExamples.Community.SignalrAndBlazor.Core/StrideExamples.Community.SignalrAndBlazor.Core.csproj" />
+    <Project Path="Community/SignalR_And_Blazor/StrideExamples.Community.SignalrAndBlazor.BlazorClient/StrideExamples.Community.SignalrAndBlazor.BlazorClient.csproj" />
+  </Folder>
   <Folder Name="/Community/">
-    <Folder Name="/Community/SignalR_And_Blazor/">
-      <Project Path="Community/SignalR_And_Blazor/StrideExamples.Community.SignalrAndBlazor.Console/StrideExamples.Community.SignalrAndBlazor.Console.csproj" />
-      <Project Path="Community/SignalR_And_Blazor/StrideExamples.Community.SignalrAndBlazor.Core/StrideExamples.Community.SignalrAndBlazor.Core.csproj" />
-    </Folder>
     <Project Path="Community/StrideExamples.Community.CollisionGroup/StrideExamples.Community.CollisionGroup.csproj" />
     <Project Path="Community/StrideExamples.Community.CollisionLayer/StrideExamples.Community.CollisionLayer.csproj" />
     <Project Path="Community/StrideExamples.Community.CylinderMesh/StrideExamples.Community.CylinderMesh.csproj" />

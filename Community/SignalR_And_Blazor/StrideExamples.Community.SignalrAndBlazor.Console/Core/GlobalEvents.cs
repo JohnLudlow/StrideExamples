@@ -1,5 +1,5 @@
 using Stride.Engine.Events;
-using StrideExamples.SignalrAndBlazor.Core.Dtos;
+using StrideExamples.Community.SignalrAndBlazor.Core.Dtos;
 
 namespace StrideExamples.SignalrAndBlazor.Console.Core;
 

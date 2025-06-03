@@ -1,6 +1,6 @@
-using StrideExamples.SignalrAndBlazor.Core.Dtos;
+using StrideExamples.Community.SignalrAndBlazor.Core.Dtos;
 
-namespace StrideExamples.SignalrAndBlazor.Core.Interfaces;
+namespace StrideExamples.Community.SignalrAndBlazor.Core.Interfaces;
 
 public interface IScreenClient
 {

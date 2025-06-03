@@ -1,4 +1,4 @@
-namespace StrideExamples.SignalrAndBlazor.Core.Core;
+namespace StrideExamples.Community.SignalrAndBlazor.Core.Core;
 
 public enum EntityType
 {

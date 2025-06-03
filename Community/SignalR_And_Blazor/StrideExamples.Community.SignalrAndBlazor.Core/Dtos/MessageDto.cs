@@ -1,6 +1,6 @@
-using StrideExamples.SignalrAndBlazor.Core.Core;
+using StrideExamples.Community.SignalrAndBlazor.Core.Core;
 
-namespace StrideExamples.SignalrAndBlazor.Core.Dtos;
+namespace StrideExamples.Community.SignalrAndBlazor.Core.Dtos;
 
 public class MessageDto
 {

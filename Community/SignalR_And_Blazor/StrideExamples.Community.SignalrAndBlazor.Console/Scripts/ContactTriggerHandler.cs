@@ -1,7 +1,7 @@
 using Stride.BepuPhysics;
 using Stride.BepuPhysics.Definitions.Contacts;
+using StrideExamples.Community.SignalrAndBlazor.Core.Core;
 using StrideExamples.SignalrAndBlazor.Console.Core;
-using StrideExamples.SignalrAndBlazor.Core.Core;
 
 namespace StrideExamples.SignalrAndBlazor.Console.Scripts;
 

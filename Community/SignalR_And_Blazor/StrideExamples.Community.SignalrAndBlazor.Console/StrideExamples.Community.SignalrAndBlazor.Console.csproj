@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="9.0.5" />
-    <ProjectReference Include="../StrideExamples.SignalrAndBlazor.Core/StrideExamples.SignalrAndBlazor.Core.csproj" />
+    <ProjectReference Include="../StrideExamples.Community.SignalrAndBlazor.Core/StrideExamples.Community.SignalrAndBlazor.Core.csproj" />
 
     <PackageReference Include="Stride.CommunityToolkit" Version="1.0.0-preview.56" />
     <PackageReference Include="Stride.CommunityToolKit.Skyboxes" Version="1.0.0-preview.56" />
