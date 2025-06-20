@@ -149,8 +149,8 @@ Material GetMaterial3()
 void DisplayInstructions()
 {
 
-    _instructions.Instructions.Clear();
-    _instructions.Instructions.AddRange(GenerateInstructions(_skyboxIntensity));
+    _instructions?.Instructions.Clear();
+    _instructions?.Instructions.AddRange(GenerateInstructions(_skyboxIntensity));
 }
 
 void InitializeDebugTextPrinter()

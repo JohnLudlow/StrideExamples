@@ -11,6 +11,7 @@ namespace StrideExamples.StrideUI.Grid.Managers;
 public class GameManager
 {
     private const string _errorDuringLoad = "Error during load operation: {0}";
+    private static readonly CompositeFormat _errorDuringLoadFormat = CompositeFormat.Parse(_errorDuringLoad);
 
     private readonly CubeDataManager _cubeDataManager;
     private readonly ClickDataManager _clickDataManager;
@@ -69,7 +70,7 @@ public class GameManager
         }
         catch (Exception ex)
         {
-            Console.WriteLine(string.Format(_errorDuringLoad, ex.Message));
+            Console.WriteLine(string.Format(CultureInfo.InvariantCulture, _errorDuringLoadFormat, ex.Message));        
 
             return false;
         }
@@ -87,7 +88,7 @@ public class GameManager
         }
         catch (Exception ex)
         {
-            Console.WriteLine(string.Format(_errorDuringLoad, ex.Message));
+            Console.WriteLine(string.Format(CultureInfo.InvariantCulture, _errorDuringLoadFormat, ex.Message));
 
             return [];
         }
