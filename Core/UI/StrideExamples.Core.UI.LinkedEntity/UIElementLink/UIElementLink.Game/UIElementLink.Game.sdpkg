@@ -1,0 +1,24 @@
+!Package
+SerializedVersion: {Assets: 3.1.0.0}
+Meta:
+    Name: UIElementLink.Game
+    Version: 1.0.0
+    Authors: []
+    Owners: []
+    Dependencies: null
+AssetFolders:
+    -   Path: !dir ../Assets/Shared
+    -   Path: !dir Effects
+    -   Path: !dir ../Assets/Shared
+    -   Path: !dir ../Assets/Shared
+    -   Path: !dir C:/src/StrideExamples/Core/UI/StrideExamples.Core.UI.LinkedEntity/UIElementLink/Assets/Shared
+ResourceFolders:
+    - !dir ../Resources
+OutputGroupDirectories: {}
+ExplicitFolders: []
+Bundles: []
+TemplateFolders: []
+RootAssets:
+    - 27a8d262-c8fd-4731-8bbf-38b7ffcde7ff:BillboardedScreen
+    - 47657b87-b1d8-4b96-a119-9ab65c551df1:TiltedScreen
+    - b3c0d22e-7f37-4c23-8ddd-2411a6a49ee9:FullScreen

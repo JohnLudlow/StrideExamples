@@ -24,6 +24,7 @@ Console.WriteLine("Hello, World!");
 void Start(Scene scene)
 {
     game.SetupBase3DScene();
+    game.AddProfiler();
     var skybox = game.AddSkybox();
 
     _lightComponent = skybox.GetComponent<LightComponent>();

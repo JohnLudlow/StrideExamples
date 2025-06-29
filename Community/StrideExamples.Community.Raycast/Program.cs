@@ -9,7 +9,6 @@ using Stride.Engine;
 using Stride.Games;
 using Stride.Graphics;
 using Stride.Rendering;
-using Stride.CommunityToolkit.DebugShapes.Code;
 
 // Constants for the impulse strength and sphere properties
 const float _impulseStrength = 0.5f;

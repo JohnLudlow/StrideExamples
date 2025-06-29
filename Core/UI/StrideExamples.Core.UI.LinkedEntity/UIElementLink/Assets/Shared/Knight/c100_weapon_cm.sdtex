@@ -1,0 +1,9 @@
+!Texture
+Id: a0cf0eb6-5a1c-42e9-bbbd-8e9f1f11b77d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Knight/c100_weapon_cm.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+    PremultiplyAlpha: false
+IsStreamable: false

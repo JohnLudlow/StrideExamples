@@ -15,4 +15,9 @@
     <Project Path="Community/StrideExamples.Community.StrideUI.Grid/StrideExamples.Community.StrideUI.Grid.csproj" />
     <Project Path="Community/StrideExamples.Community.TextureCanvas/StrideExamples.Community.TextureCanvas.csproj" />
   </Folder>
+  <Folder Name="/Local/">
+    <Project Path="Local/StrideExamples.Local.ImGui.Inspector/StrideExamples.Local.ImGui.Inspector.csproj" />
+    <Project Path="Local/StrideExamples.Local.OcclusionTest/StrideExamples.Local.OcclusionTest.csproj" />
+    <Project Path="Local/StrideExamples.Local.StrideUI.Inspector/StrideExamples.Local.StrideUI.Inspector.csproj" />
+  </Folder>
 </Solution>

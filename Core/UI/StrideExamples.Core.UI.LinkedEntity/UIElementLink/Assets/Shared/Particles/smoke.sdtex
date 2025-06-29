@@ -1,0 +1,8 @@
+!Texture
+Id: 9ca04809-436c-444c-b605-48872c79f8b1
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Particles/smoke.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+IsStreamable: false

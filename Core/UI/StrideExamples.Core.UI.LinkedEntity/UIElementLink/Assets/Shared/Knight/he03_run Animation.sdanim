@@ -1,0 +1,20 @@
+!Animation
+Id: 6d07fa71-0914-4fc8-bf86-9a775741088e
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Knight/he03_run.fbx
+AnimationStack: 0
+ClipDuration:
+    Enabled: false
+    StartAnimationTime: 0:00:00:00.0000000
+    EndAnimationTime: 0:00:30:00.0000000
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+RepeatMode: LoopInfinite
+Type: !StandardAnimationAssetType {}
+Skeleton: fee1c0a2-942e-4531-b258-0c796dc104d4:Knight/knight Skeleton
+RootMotion: false
+PreviewModel: fa0164d2-031a-4217-9c91-0f8488915923:Knight/knight
+AnimationTimeMinimum: 0:00:00:00.0000000
+AnimationTimeMaximum: 0:00:00:00.8580000
+~SourceHashes:
+    086b12c0c83b2bdc1698bd5265f29d64~../../../Resources/Knight/he03_run.fbx: cb93f4fa93177d74270587aa10a2e900

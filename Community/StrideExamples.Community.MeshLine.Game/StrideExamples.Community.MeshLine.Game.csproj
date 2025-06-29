@@ -6,12 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Stride.CommunityToolkit" Version="1.0.0-preview.56" />
-    <PackageReference Include="Stride.CommunityToolKit.Skyboxes" Version="1.0.0-preview.56" />
-    <PackageReference Include="Stride.CommunityToolKit.Bepu" Version="1.0.0-preview.56" />
-    <PackageReference Include="Stride.CommunityToolkit.Windows" Version="1.0.0-preview.56" />
+    <PackageReference Include="Stride.CommunityToolKit.Bepu" Version="1.0.0-preview.56" />  
   </ItemGroup>
-
 </Project>
