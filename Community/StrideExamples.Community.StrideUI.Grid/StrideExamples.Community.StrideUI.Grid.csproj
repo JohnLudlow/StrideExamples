@@ -8,13 +8,13 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Stride.CommunityToolkit" Version="1.0.0-preview.56" />
-    <PackageReference Include="Stride.CommunityToolKit.Skyboxes" Version="1.0.0-preview.56" />
-    <PackageReference Include="Stride.CommunityToolKit.Bepu" Version="1.0.0-preview.56" />
-    <PackageReference Include="Stride.CommunityToolkit.Windows" Version="1.0.0-preview.56" />
-    <PackageReference Include="NexVYaml" Version="1.1.0" />
-    <PackageReference Include="Microsoft.Build" Version="17.13.9" />
-    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="17.13.9" />
+    <PackageReference Include="Stride.CommunityToolkit"  />
+    <PackageReference Include="Stride.CommunityToolKit.Skyboxes"  />
+    <PackageReference Include="Stride.CommunityToolKit.Bepu"  />
+    <PackageReference Include="Stride.CommunityToolkit.Windows"  />
+    <PackageReference Include="NexVYaml"/>
+    <PackageReference Include="Microsoft.Build"/>
+    <PackageReference Include="Microsoft.Build.Utilities.Core"/>
   </ItemGroup>
   
 </Project>
