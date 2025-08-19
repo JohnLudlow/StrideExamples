@@ -6,6 +6,7 @@
     <Project Path="Community/StrideExamples.Community.DebugShapes/StrideExamples.Community.DebugShapes.csproj" />
     <Project Path="Community/StrideExamples.Community.Material/StrideExamples.Community.Material.csproj" />
     <Project Path="Community/StrideExamples.Community.MeshLine.Game/StrideExamples.Community.MeshLine.Game.csproj" />
+    <Project Path="Community/StrideExamples.Community.MeshOutlineShader/StrideExamples.Community.MeshOutlineShader.csproj" />
     <Project Path="Community/StrideExamples.Community.PartialTorus/StrideExamples.Community.PartialTorus.csproj" />
     <Project Path="Community/StrideExamples.Community.Particles/StrideExamples.Community.Particles.csproj" />
     <Project Path="Community/StrideExamples.Community.ProceduralGeometry/StrideExamples.Community.ProceduralGeometry.csproj" />
