@@ -29,13 +29,13 @@ public class MeshOutlineRenderFeature : RootRenderFeature
   /// </summary>
   [DataMember(10)]
   [DataMemberRange(0.0f, 0.1f, 0.001f, 0.002f, 4)]
-  public float ScaleAdjust = 0.001f;
+  public float ScaleAdjust { get; set; } = 0.001f;
 
   /// <summary>
   /// Specifies which render groups will have outlines applied.
   /// </summary>
   [DataMember(5)]
-  public RenderGroupMask RenderGroupMask;
+  public required RenderGroupMask RenderGroupMask { get; set; }
 
   /// <inheritdoc/>
   public override Type SupportedRenderObjectType => typeof(RenderMesh);
