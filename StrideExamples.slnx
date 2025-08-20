@@ -11,6 +11,7 @@
     <Project Path="Community/StrideExamples.Community.Particles/StrideExamples.Community.Particles.csproj" />
     <Project Path="Community/StrideExamples.Community.ProceduralGeometry/StrideExamples.Community.ProceduralGeometry.csproj" />
     <Project Path="Community/StrideExamples.Community.Raycast/StrideExamples.Community.Raycast.csproj" />
+    <Project Path="Community/StrideExamples.Community.RootRendererShader/StrideExamples.Community.RootRendererShader.csproj" />
     <Project Path="Community/StrideExamples.Community.StrideUI.CapsuleAndRigidBody/StrideExamples.Community.StrideUI.CapsuleAndRigidBody.csproj" />
     <Project Path="Community/StrideExamples.Community.StrideUI.Grid/StrideExamples.Community.StrideUI.Grid.csproj" />
     <Project Path="Community/StrideExamples.Community.TextureCanvas/StrideExamples.Community.TextureCanvas.csproj" />
