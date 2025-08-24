@@ -66,3 +66,12 @@ indent_size = 2
 indent_style = space
 indent_size = 2
 tab_width = 2
+
+# IDE0160: Convert to block scoped namespace
+csharp_style_namespace_declarations = block_scoped
+
+# IDE0160: Convert to block scoped namespace
+csharp_style_namespace_declarations = block_scoped
+
+# IDE0160: Convert to block scoped namespace
+csharp_style_namespace_declarations = file_scoped

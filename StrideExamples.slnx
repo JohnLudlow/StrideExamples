@@ -1,5 +1,8 @@
 <Solution>
   <Folder Name="/Community/">
+    <Project Path="Community/StrideExamples.Community.BlazorAndSignalR.Client/StrideExamples.Community.BlazorAndSignalR.Client.csproj" />
+    <Project Path="Community/StrideExamples.Community.BlazorAndSignalR.Server/StrideExamples.Community.BlazorAndSignalR.Server.csproj" />
+    <Project Path="Community/StrideExamples.Community.BlazorAndSignalR.Shared/StrideExamples.Community.BlazorAndSignalR.Shared.csproj" />
     <Project Path="Community/StrideExamples.Community.CollisionGroup/StrideExamples.Community.CollisionGroup.csproj" />
     <Project Path="Community/StrideExamples.Community.CollisionLayer/StrideExamples.Community.CollisionLayer.csproj" />
     <Project Path="Community/StrideExamples.Community.CylinderMesh/StrideExamples.Community.CylinderMesh.csproj" />
