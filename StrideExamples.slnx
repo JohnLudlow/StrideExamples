@@ -2,6 +2,7 @@
   <Folder Name="/Community/">
     <Project Path="Community/StrideExamples.Community.CollisionGroup/StrideExamples.Community.CollisionGroup.csproj" />
     <Project Path="Community/StrideExamples.Community.CollisionLayer/StrideExamples.Community.CollisionLayer.csproj" />
+    <Project Path="Community/StrideExamples.Community.CubeClicker/StrideExamples.Community.CubeClicker.csproj" />
     <Project Path="Community/StrideExamples.Community.CylinderMesh/StrideExamples.Community.CylinderMesh.csproj" />
     <Project Path="Community/StrideExamples.Community.DebugShapes/StrideExamples.Community.DebugShapes.csproj" />
     <Project Path="Community/StrideExamples.Community.Material/StrideExamples.Community.Material.csproj" />
