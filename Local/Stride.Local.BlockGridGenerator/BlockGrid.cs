@@ -10,9 +10,12 @@ using Stride.CommunityToolkit.Rendering.ProceduralModels;
 using Stride.Core.Mathematics;
 using Stride.Engine;
 using Stride.Games;
+using Stride.Local.BlockGridGenerator.Components;
 using Stride.Rendering;
 using Stride.Rendering.Colors;
 using Stride.Rendering.Lights;
+using Stride.Rendering.Materials;
+using Stride.Rendering.Materials.ComputeColors;
 using StrideExamples.Local.BlockGridGenerator.Common;
 
 namespace Stride.Local.BlockGridGenerator;
@@ -40,6 +43,7 @@ public class BlockGrid(Game game)
 
     AddGizmo(scene);
     AddAllDirectionLighting(intensity: 5);
+    AddMaterials();
     AddNewFirstLayer(_startPosition);
 
     CreateCubeLayer(.5f);
@@ -59,6 +63,29 @@ public class BlockGrid(Game game)
 
     entity.Transform.Position = new Vector3(-7.5f, 1, -7.5f);
     entity.AddGizmo(_game.GraphicsDevice, showAxisName: true);
+  }
+
+  private void AddMaterials()
+  {
+    foreach (var color in Constants.Colours)
+    {
+      _materials.Add(color, CreateMaterial(color, specular: 0));
+    }
+  }
+
+  public Material CreateMaterial(Color? color = null, float specular = 1f, float microSurface = .65f)
+  {
+    var lightmapMaterial = new MaterialDescriptor
+    {
+      Attributes =
+      {
+        Diffuse = new MaterialDiffuseMapFeature(new ComputeColor(color ?? GameDefaults.DefaultMaterialColor)),
+        Specular = new MaterialMetalnessMapFeature(new ComputeFloat(specular)),
+        MicroSurface = new MaterialGlossinessMapFeature(new ComputeFloat(microSurface))
+      }
+    };
+
+    return Material.New(_game.GraphicsDevice, lightmapMaterial);
   }
 
   public void AddAllDirectionLighting(float intensity, bool showLightGizmo = true)
@@ -110,10 +137,12 @@ public class BlockGrid(Game game)
     var entity = _game.Create3DPrimitive(PrimitiveModelType.Cube, new Primitive3DEntityOptions()
       {
         Size = size,
+        Material = _materials[color],
         EntityName = "Cube",
       }
     );
 
+    entity.Add(new CubeComponent(color));
     return entity;
   }
 
