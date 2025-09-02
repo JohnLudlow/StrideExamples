@@ -30,7 +30,7 @@ void Start(Scene rootScene)
 
 Entity CreateSphereEntity(Game game, Color color)
 {
-    return game.Create3DPrimitive(PrimitiveModelType.Sphere, new Primitive3DCreationOptions { Material = game.CreateMaterial(color) });
+    return game.Create3DPrimitive(PrimitiveModelType.Sphere, new () { Material = game.CreateMaterial(color) });
 }
 
 Entity CreateLineEntity(Game game)

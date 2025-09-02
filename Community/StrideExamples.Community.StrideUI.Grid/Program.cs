@@ -8,6 +8,7 @@ using NexVYaml;
 
 using StrideExamples.StrideUI.Grid.Managers;
 using StrideExamples.StrideUI.Grid.Scripts;
+using Stride.CommunityToolkit.Renderers;
 
 using var game = new Game();
 

@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using Stride.CommunityToolkit.Bepu;
 using Stride.CommunityToolkit.Engine;
 using Stride.CommunityToolkit.Extensions;
 using Stride.CommunityToolkit.Rendering.Utilities;
@@ -16,7 +17,7 @@ game.Run(start: Start);
 static void Start(Game game)
 {
     game.Window.SetSize(new Int2(1000, 1000));
-    game.SetupBase();
+    game.SetupBase3DScene();
 
     var font = game.Content.Load<SpriteFont>("StrideDefaultFont");
     var directory = Path.GetDirectoryName(Assembly.GetEntryAssembly()!.Location) ?? throw new InvalidOperationException("Unable to find assembly path");
