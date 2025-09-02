@@ -8,10 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Stride.CommunityToolkit"  />
-    <PackageReference Include="Stride.CommunityToolKit.Skyboxes"  />
-    <PackageReference Include="Stride.CommunityToolKit.Bepu"  />
-    <PackageReference Include="Stride.CommunityToolkit.Windows"  />
+    <PackageReference Include="Stride.CommunityToolkit" />
+    <PackageReference Include="Stride.CommunityToolKit.Skyboxes" />
+    <PackageReference Include="Stride.CommunityToolKit.Bepu" />
+    <PackageReference Include="Stride.CommunityToolkit.Windows" />
   </ItemGroup>
 
     <ItemGroup>
@@ -23,8 +23,12 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="Effects\MaterialSurfaceShadingLightmap.sdsl">
+      <None Update="Effects/MaterialSurfaceShadingLightmap.sdsl">
         <LastGenOutput>MaterialSurfaceShadingLightmap.sdsl.cs</LastGenOutput>
       </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Assets\" />
     </ItemGroup>
 </Project>

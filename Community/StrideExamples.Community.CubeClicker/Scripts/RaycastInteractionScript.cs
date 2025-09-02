@@ -13,7 +13,7 @@ namespace StrideExamples.Community.CubeClicker.Scripts;
 public class RaycastInteractionScript : AsyncScript
 {
   private int _totalScore;
-  private SoundInstance? _soundInstance;
+  // private SoundInstance? _soundInstance;
   private EntityTextComponent? _scoreComponent;
   public override async Task Execute()
   {
@@ -23,8 +23,8 @@ public class RaycastInteractionScript : AsyncScript
     var totalScoreEntity = Entity.Scene.Entities.FirstOrDefault(e => e.Name == Constants.TotalScore);
 
     _scoreComponent = totalScoreEntity?.Get<EntityTextComponent>();
-    var sound = Game.Content.Load<Sound>("wood-tap-5");
-    _soundInstance = sound.CreateInstance(Audio.AudioEngine.DefaultListener);
+    // var sound = Game.Content.Load<Sound>("wood-tap-5");
+    // _soundInstance = sound.CreateInstance(Audio.AudioEngine.DefaultListener);
 
     while (Game.IsRunning)
     {
@@ -60,8 +60,8 @@ public class RaycastInteractionScript : AsyncScript
   {
     if (entity.Name == "Cube")
     {
-      _soundInstance?.Stop();
-      _soundInstance?.Play();
+      // _soundInstance?.Stop();
+      // _soundInstance?.Play();
 
       var cubeComponent = entity.Get<CubeComponent>();
 
