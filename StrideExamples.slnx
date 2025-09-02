@@ -16,4 +16,7 @@
     <Project Path="Community/StrideExamples.Community.StrideUI.Grid/StrideExamples.Community.StrideUI.Grid.csproj" />
     <Project Path="Community/StrideExamples.Community.TextureCanvas/StrideExamples.Community.TextureCanvas.csproj" />
   </Folder>
+  <Folder Name="/Local/">
+    <Project Path="Local/Stride.Local.BlockGridGenerator/Stride.Local.BlockGridGenerator.csproj" />
+  </Folder>  
 </Solution>

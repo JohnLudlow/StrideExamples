@@ -1,13 +1,13 @@
 using Stride.Core.Mathematics;
 
-namespace StrideExamples.Community.CubeClicker.Common;
+namespace StrideExamples.Local.BlockGridGenerator.Common;
 
 public static class Constants
 {
   public const int BasePointsPerCube = 10;
   public const float Interval = 0.33f;
-  public const int MaxLayers = 5;
-  public const int Rows = 20;
+  public const int MaxLayers = 10;
+  public const int Rows = 50;
   public const string TotalScore = "Total Score";
 
   public static readonly List<Color> Colours = [Color.Red, Color.Green, Color.Blue, Color.DarkGoldenrod];
