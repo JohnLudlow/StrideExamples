@@ -5,12 +5,12 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Stride.CommunityToolkit" Version="1.0.0-preview.56" />
-    <PackageVersion Include="Stride.CommunityToolKit.Bepu" Version="1.0.0-preview.56" />
-    <PackageVersion Include="Stride.CommunityToolKit.Bullet" Version="1.0.0-preview.56" />
-    <PackageVersion Include="Stride.CommunityToolkit.Skyboxes" Version="1.0.0-preview.56" />
-    <PackageVersion Include="Stride.CommunityToolkit.Windows" Version="1.0.0-preview.56" />
-    <PackageVersion Include="Stride.CommunityToolkit.DebugShapes" Version="1.0.0-preview.56" />
+    <PackageVersion Include="Stride.CommunityToolkit" Version="1.0.0-preview.58" />
+    <PackageVersion Include="Stride.CommunityToolKit.Bepu" Version="1.0.0-preview.58" />
+    <PackageVersion Include="Stride.CommunityToolKit.Bullet" Version="1.0.0-preview.58" />
+    <PackageVersion Include="Stride.CommunityToolkit.Skyboxes" Version="1.0.0-preview.58" />
+    <PackageVersion Include="Stride.CommunityToolkit.Windows" Version="1.0.0-preview.58" />
+    <PackageVersion Include="Stride.CommunityToolkit.DebugShapes" Version="1.0.0-preview.58" />
 
     <PackageVersion Include="NexVYaml" Version="1.1.0" />
     <PackageVersion Include="Microsoft.Build" Version="17.13.9" />
