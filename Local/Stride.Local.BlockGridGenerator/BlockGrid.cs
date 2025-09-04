@@ -11,6 +11,7 @@ using Stride.Core.Mathematics;
 using Stride.Engine;
 using Stride.Games;
 using Stride.Local.BlockGridGenerator.Components;
+using Stride.Local.BlockGridGenerator.Scripts;
 using Stride.Rendering;
 using Stride.Rendering.Colors;
 using Stride.Rendering.Lights;
@@ -45,13 +46,22 @@ public class BlockGrid(Game game)
     AddAllDirectionLighting(intensity: 5);
     AddMaterials();
     AddNewFirstLayer(_startPosition);
-
     CreateCubeLayer(.5f);
+
   }
 
   public void Update(Scene scene, GameTime time)
   {
 
+  }
+
+  private void AddGameManagerEntity()
+  {
+    var entity = new Entity("GameManager")
+    {
+      new RaycastInteractionScript()
+    };
+    entity.Scene = _scene;
   }
 
   private void AddGizmo(Scene scene)
@@ -80,6 +90,7 @@ public class BlockGrid(Game game)
       Attributes =
       {
         Diffuse = new MaterialDiffuseMapFeature(new ComputeColor(color ?? GameDefaults.DefaultMaterialColor)),
+        DiffuseModel = new MaterialLightmapModelFeature(),
         Specular = new MaterialMetalnessMapFeature(new ComputeFloat(specular)),
         MicroSurface = new MaterialGlossinessMapFeature(new ComputeFloat(microSurface))
       }
