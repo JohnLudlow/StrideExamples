@@ -8,9 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Stride.CommunityToolkit"/>
-    <PackageReference Include="Stride.CommunityToolKit.Skyboxes"  />
-    <PackageReference Include="Stride.CommunityToolKit.Bepu"  />
-    <PackageReference Include="Stride.CommunityToolkit.Windows"  />    
+    <PackageReference Include="Stride.CommunityToolkit" />
+    <PackageReference Include="Stride.CommunityToolKit.Skyboxes" />
+    <PackageReference Include="Stride.CommunityToolKit.Bepu" />
+    <PackageReference Include="Stride.CommunityToolkit.Windows" />    
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Scripts\" />
   </ItemGroup>
 </Project>

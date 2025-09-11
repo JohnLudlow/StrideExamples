@@ -6,7 +6,7 @@ using Stride.UI.Events;
 using System.Globalization;
 using System.Text;
 
-namespace StrideExamples.StrideUI.Grid.Managers;
+namespace StrideExamples.Community.StrideUI.Grid.Managers;
 
 public class GameManager
 {

@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using Stride.CommunityToolkit.Bepu;
 using Stride.CommunityToolkit.Engine;
 using Stride.CommunityToolkit.Rendering.ProceduralModels;
@@ -5,10 +6,9 @@ using Stride.Core.Mathematics;
 using Stride.Engine;
 using Stride.Input;
 using Stride.Rendering;
-using StrideExamples.StrideUI.Grid.Managers;
-using System.Diagnostics;
+using StrideExamples.Community.StrideUI.Grid.Managers;
 
-namespace StrideExamples.StrideUI.Grid.Scripts;
+namespace StrideExamples.Community.StrideUI.Grid.Scripts;
 
 public class ClickHandlerComponent : AsyncScript
 {

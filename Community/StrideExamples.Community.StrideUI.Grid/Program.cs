@@ -1,14 +1,12 @@
-﻿using Stride.CommunityToolkit.Bepu;
+﻿using NexVYaml;
+using Stride.CommunityToolkit.Bepu;
 using Stride.CommunityToolkit.Engine;
+using Stride.CommunityToolkit.Renderers;
 using Stride.CommunityToolkit.Skyboxes;
 using Stride.Engine;
 using Stride.Graphics;
-
-using NexVYaml;
-
-using StrideExamples.StrideUI.Grid.Managers;
-using StrideExamples.StrideUI.Grid.Scripts;
-using Stride.CommunityToolkit.Renderers;
+using StrideExamples.Community.StrideUI.Grid.Managers;
+using StrideExamples.Community.StrideUI.Grid.Scripts;
 
 using var game = new Game();
 

@@ -1,6 +1,6 @@
 using Stride.Core;
 
-namespace StrideExamples.StrideUI.Grid.Core;
+namespace StrideExamples.Community.StrideUI.Grid.Core;
 
 /// <summary>
 /// Stride.Core.Vector isn't generated as the generator can't reach the core without being in it
