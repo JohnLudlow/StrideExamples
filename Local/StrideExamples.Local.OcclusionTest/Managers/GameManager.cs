@@ -1,16 +1,18 @@
 using Stride.Engine;
+using Stride.Games;
 using Stride.Graphics;
 
 namespace StrideExamples.Local.OcclusionTest.Managers;
 
 public class GameManager
 {
-  private readonly UIManager _uiManager;
+  private readonly MultiRaycastVisibility _visibility;
 
-  public GameManager(SpriteFont font)
+  public UIManager UIManager { get; }
+
+  public GameManager(Scene rootScene, SpriteFont font)
   {
-    _uiManager = new UIManager();
+    UIManager = new UIManager(rootScene, font);
+    _visibility = new MultiRaycastVisibility();
   }
-
-  internal Entity CreateUI() => _uiManager.CreateUI();
 }

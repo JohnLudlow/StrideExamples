@@ -1,18 +1,23 @@
 ﻿using Stride.CommunityToolkit.Bepu;
+using Stride.CommunityToolkit.DebugShapes.Code;
 using Stride.CommunityToolkit.Engine;
 using Stride.CommunityToolkit.Games;
+using Stride.CommunityToolkit.Renderers;
 using Stride.CommunityToolkit.Rendering.ProceduralModels;
 using Stride.Core.Mathematics;
 using Stride.Engine;
 using Stride.Games;
 using Stride.Graphics;
+using Stride.Rendering;
+using Stride.Rendering.Materials;
+using Stride.Rendering.Materials.ComputeColors;
+using StrideExamples.Local.OcclusionTest.Components;
 using StrideExamples.Local.OcclusionTest.Managers;
 
 
 Console.WriteLine("Hello, World!");
 
 using var game = new Game();
-var visibility = new MultiRaycastVisibility();
 game.Run(start: Start, update: Update);
 
 void Start(Scene rootScene)
@@ -21,35 +26,46 @@ void Start(Scene rootScene)
   game.AddGroundGizmo();
   game.Add3DGround();
   game.AddProfiler();
-  // game.AddEntityDebugSceneRenderer();
+  game.AddAllDirectionLighting();
+  game.AddEntityDebugSceneRenderer();
+  game.AddDebugShapes();
 
   var font = game.Content.Load<SpriteFont>("StrideDefaultFont");
-  var gameManager = new GameManager(font);
+  var gameManager = new GameManager(rootScene, font);
   game.Services.AddService(gameManager);
 
-  var uiEntity = gameManager.CreateUI();
-  uiEntity.Scene = rootScene;
+  var greenCube = CreateCube(rootScene, game, "GreenCube", new(-5, 1, 0), Color.Green);
+  gameManager.UIManager.MonitorEntity(greenCube);
 
-  CreateCube(rootScene, game, "GreenCube", new(-5, 1, 0), Color.Green);
-  CreateCube(rootScene, game, "BlueCube", new(5, 1, 0), Color.Blue);
+  var blueCube = CreateCube(rootScene, game, "BlueCube", new(5, 1, 0), Color.Blue);
+  gameManager.UIManager.MonitorEntity(blueCube);
 }
 
 void Update(Scene rootScene, GameTime gameTime)
 {
-  if (!game.Input.IsKeyPressed(Stride.Input.Keys.Space))
+  var gameManager = game.Services.GetService<GameManager>();
+  gameManager?.UIManager.UpdateUI();
+}
+
+static Material CreateMaterial(Game game, Color? color = null, float specular = 1.0f, float microSurface = 0.65f)
+{
+  var lightmapMaterial = new MaterialDescriptor
   {
-    return;
-  }
+    Attributes =
+    {
+      Diffuse = new MaterialDiffuseMapFeature(new ComputeColor(color ?? GameDefaults.DefaultMaterialColor)),
+      // DiffuseModel = new MaterialLightmapModelFeature()
+      // {
+      //   Intensity = 20,
+      //   LightMap = new ComputeColor(color ?? GameDefaults.DefaultMaterialColor)
+      // },
+      Specular =  new MaterialMetalnessMapFeature(new ComputeFloat(specular)),
+      SpecularModel = new MaterialSpecularMicrofacetModelFeature(),
+      MicroSurface = new MaterialGlossinessMapFeature(new ComputeFloat(microSurface))
+    }
+  };
 
-  var camera = rootScene.Entities.First(e => e.Get<CameraComponent>() != null).Get<CameraComponent>();
-
-  var greenCube = rootScene.Entities.First(e => e.Name == "GreenCube");
-  var greenVisibility = visibility.CheckVisibility(game, greenCube, camera, camera.Entity.GetSimulation());
-  Console.WriteLine($"Green cube: {visibility.CheckVisibility(game, greenCube, camera, camera.Entity.GetSimulation())}");
-
-  var blueCube = rootScene.Entities.First(e => e.Name == "BlueCube");
-  var blueVisibility = visibility.CheckVisibility(game, blueCube, camera, camera.Entity.GetSimulation());
-  Console.WriteLine($"Blue cube: {visibility.CheckVisibility(game, blueCube, camera, camera.Entity.GetSimulation())}");
+  return Material.New(game.GraphicsDevice, lightmapMaterial);
 }
 
 static Entity CreateCube(Scene rootScene, Game game, string name, Vector3 position, Color color)
@@ -66,6 +82,14 @@ static Entity CreateCube(Scene rootScene, Game game, string name, Vector3 positi
   cube.Name = name;
   cube.Transform.Position = position;
   cube.Scene = rootScene;
+
+  cube.Add(new MultiRaycastVisibilityComponent
+  {
+    Game = game,
+    Target = cube,
+    Camera = rootScene.GetCamera() ?? throw new InvalidOperationException("No camera found in scene"),
+    Simulation = cube.GetSimulation()
+  });
 
   return cube;
 }
