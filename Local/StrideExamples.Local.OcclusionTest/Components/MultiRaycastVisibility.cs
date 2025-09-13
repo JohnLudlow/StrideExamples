@@ -27,8 +27,11 @@ public class MultiRaycastVisibilityComponent : SyncScript
   public VisibilityResult CheckVisibility(Game game, Entity target, CameraComponent camera, Stride.BepuPhysics.BepuSimulation simulation)
   {
     _debugDraw ??= game.Services.GetService<Stride.CommunityToolkit.DebugShapes.Code.ImmediateDebugRenderSystem>();
-    _debugDraw.Enabled = true;
-    _debugDraw.Visible = true;
+    if (_debugDraw is not null)
+    {
+      _debugDraw.Enabled = true;
+      _debugDraw.Visible = true;
+    }
 
     var cameraPos = camera.Entity.Transform.WorldMatrix.TranslationVector;
 
@@ -47,7 +50,7 @@ public class MultiRaycastVisibilityComponent : SyncScript
       var direction = point - cameraPos;
 
       direction.Normalize();
-      _debugDraw.DrawRay(cameraPos, direction*100, Color.Yellow, 0, false);
+      _debugDraw?.DrawRay(cameraPos, direction*100, Color.Yellow, 0, false);
 
       // Use Bepu's raycast method
       var hit = simulation.RayCast(

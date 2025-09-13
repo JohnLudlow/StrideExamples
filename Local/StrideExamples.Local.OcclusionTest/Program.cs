@@ -27,8 +27,8 @@ void Start(Scene rootScene)
   game.Add3DGround();
   game.AddProfiler();
   game.AddAllDirectionLighting();
-  game.AddEntityDebugSceneRenderer();
-  game.AddDebugShapes();
+  // game.AddEntityDebugSceneRenderer();
+  // game.AddDebugShapes();
 
   var font = game.Content.Load<SpriteFont>("StrideDefaultFont");
   var gameManager = new GameManager(rootScene, font);

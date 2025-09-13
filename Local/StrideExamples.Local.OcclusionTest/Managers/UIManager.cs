@@ -50,7 +50,7 @@ public class UIManager
 
       if (visibility is not null)
       {
-        _panel.Children.Add(CreateTextBlock($"Entity: {entity.Name} ({visibility.LastVisibilityResult.VisibilityPercentage:P}%, {visibility.LastVisibilityResult.RaysHit} / {visibility.LastVisibilityResult.TotalRays})", 12, TextAlignment.Left));
+        _panel.Children.Add(CreateTextBlock($"Entity: {entity.Name} ({visibility.LastVisibilityResult.VisibilityPercentage:P}% visible, {visibility.LastVisibilityResult.RaysHit} / {visibility.LastVisibilityResult.TotalRays} rays hit)", 12, TextAlignment.Left));
       }
     }
   }
