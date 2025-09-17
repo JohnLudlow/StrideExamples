@@ -17,6 +17,8 @@
     <Project Path="Community/StrideExamples.Community.TextureCanvas/StrideExamples.Community.TextureCanvas.csproj" />
   </Folder>
   <Folder Name="/Local/">
+    <Project Path="Local/StrideExamples.Local.Common/StrideExamples.Local.Common.csproj" />
+    <Project Path="Local/StrideExamples.Local.ImGui/StrideExamples.Local.ImGui.csproj" />
     <Project Path="Local/StrideExamples.Local.OcclusionTest/StrideExamples.Local.OcclusionTest.csproj" />
   </Folder>
 </Solution>
