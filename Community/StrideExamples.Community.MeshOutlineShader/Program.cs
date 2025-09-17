@@ -39,8 +39,7 @@ void CreateOutlinePrimitive(Scene rootScene, PrimitiveModelType modelType, Color
   var entity = game.Create3DPrimitive(modelType, options: new()
   {
     RenderGroup = RenderGroup.Group5,
-  }
-  );
+  });
 
   entity.Transform.Position = position;
   entity.Add(

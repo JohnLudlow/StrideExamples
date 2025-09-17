@@ -1,7 +1,7 @@
 using NexVYaml;
 using Stride.Core.IO;
 
-namespace StrideExamples.StrideUI.Grid.Core;
+namespace StrideExamples.Community.StrideUI.Grid.Core;
 
 public class DataSaver<TData>
 {

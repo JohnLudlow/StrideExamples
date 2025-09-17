@@ -6,10 +6,9 @@ using Stride.Rendering;
 using Stride.UI;
 using Stride.UI.Controls;
 using Stride.UI.Events;
-using Stride.UI.Panels;
-using StrideExamples.StrideUI.Grid.Core;
+using StrideExamples.Community.StrideUI.Grid.Core;
 
-namespace StrideExamples.StrideUI.Grid.Managers;
+namespace StrideExamples.Community.StrideUI.Grid.Managers;
 
 public class UIManager
 {

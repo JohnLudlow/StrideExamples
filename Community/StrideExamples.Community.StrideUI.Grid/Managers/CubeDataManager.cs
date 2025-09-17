@@ -1,8 +1,7 @@
 using Stride.Core.Mathematics;
-using StrideExamples.StrideUI.Grid.Core;
-using System.Runtime.Serialization;
+using StrideExamples.Community.StrideUI.Grid.Core;
 
-namespace StrideExamples.StrideUI.Grid.Managers;
+namespace StrideExamples.Community.StrideUI.Grid.Managers;
 
 public class CubeDataManager
 {

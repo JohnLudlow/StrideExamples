@@ -3,7 +3,7 @@ using Stride.Core.Mathematics;
 using Stride.Engine;
 using Stride.Physics;
 
-namespace StrideExamples.StrideUI.Grid.Scripts;
+namespace StrideExamples.Community.StrideUI.Grid.Scripts;
 
 public class CubeVanisher : AsyncScript
 {

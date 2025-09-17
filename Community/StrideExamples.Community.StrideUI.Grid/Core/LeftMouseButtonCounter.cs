@@ -1,7 +1,7 @@
 using Stride.Core;
 using Stride.Input;
 
-namespace StrideExamples.StrideUI.Grid.Core;
+namespace StrideExamples.Community.StrideUI.Grid.Core;
 
 /// <summary>
 /// Has to be directly [DataContract] tagged, else it won't detect it.
