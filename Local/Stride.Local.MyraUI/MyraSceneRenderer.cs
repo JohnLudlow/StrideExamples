@@ -27,7 +27,7 @@ public class MyraSceneRenderer : SceneRendererBase
   /// </summary>
   private void InitializeMainView()
   {
-    _mainView = new MainView();
+    _mainView = new MainView(MyraEnvironment.Game.SceneSystem.SceneInstance.RootScene);
 
     Services.AddService(_mainView);
   }

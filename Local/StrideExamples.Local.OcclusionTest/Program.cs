@@ -68,7 +68,7 @@ static Material CreateMaterial(Game game, Color? color = null, float specular = 
   return Material.New(game.GraphicsDevice, lightmapMaterial);
 }
 
-static Entity CreateCube(Scene rootScene, Game game, string name, Vector3 position, Color color)
+static Entity CreateCube(Scene rootScene, IGame game, string name, Vector3 position, Color color)
 {
   var cube = game.Create3DPrimitive(
     PrimitiveModelType.Cube,
@@ -85,7 +85,6 @@ static Entity CreateCube(Scene rootScene, Game game, string name, Vector3 positi
 
   cube.Add(new MultiRaycastVisibilityComponent
   {
-    Game = game,
     Target = cube,
     Camera = rootScene.GetCamera() ?? throw new InvalidOperationException("No camera found in scene"),
     Simulation = cube.GetSimulation()

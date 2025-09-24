@@ -1,4 +1,6 @@
 using Myra.Graphics2D.UI;
+using Stride.Engine;
+using Stride.Games;
 
 namespace Stride.Local.MyraUI;
 
@@ -13,7 +15,7 @@ internal sealed class MainView : Panel
   /// <summary>
   /// Initializes a new instance of the <see cref="MainView"/> class.
   /// </summary>
-  public MainView()
+  public MainView(Scene rootScene)
   {
     Widgets.Add(UIUtils.CreateHealthBar(-20, "#4BD961FF"));
 
@@ -31,6 +33,21 @@ internal sealed class MainView : Panel
       Content = label
     };
 
+    var tree = new Myra.Graphics2D.UI.Tree();
+    PopulateTree(tree, rootScene.Entities);
+    Widgets.Add(tree);
+
     Widgets.Add(ExampleWindow);
+  }
+
+
+
+  private static void PopulateTree(TreeNode node, IEnumerable<Entity> entities)
+  {
+    foreach (var entity in entities)
+    {
+      var childNode = node.AddSubNode(entity.Name);
+      PopulateTree(childNode, entity.GetChildren());
+    }
   }
 }

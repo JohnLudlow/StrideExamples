@@ -1,12 +1,12 @@
 using Stride.Core;
 using Stride.Core.Mathematics;
 using Stride.Engine;
+using Stride.Games;
 
 namespace StrideExamples.Local.OcclusionTest.Components;
 
 public class MultiRaycastVisibilityComponent : SyncScript
 {
-  public required Game Game { get; init; }
   public required Entity Target { get; init; }
   public required CameraComponent Camera { get; init; }
   public required Stride.BepuPhysics.BepuSimulation Simulation { get; init; }
@@ -24,7 +24,7 @@ public class MultiRaycastVisibilityComponent : SyncScript
     public int TotalRays;
   }
 
-  public VisibilityResult CheckVisibility(Game game, Entity target, CameraComponent camera, Stride.BepuPhysics.BepuSimulation simulation)
+  public VisibilityResult CheckVisibility(IGame game, Entity target, CameraComponent camera, Stride.BepuPhysics.BepuSimulation simulation)
   {
     _debugDraw ??= game.Services.GetService<Stride.CommunityToolkit.DebugShapes.Code.ImmediateDebugRenderSystem>();
     if (_debugDraw is not null)
