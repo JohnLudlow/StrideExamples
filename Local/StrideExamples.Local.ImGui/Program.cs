@@ -6,7 +6,6 @@ using Stride.CommunityToolkit.Bepu;
 using Stride.CommunityToolkit.Skyboxes;
 using StrideExamples.Local.Common;
 using Stride.Core.Mathematics;
-using Stride.CommunityToolkit.ImGui;
 
 Console.WriteLine("Hello, World!");
 
@@ -23,8 +22,6 @@ void Start(Scene rootScene)
 
   var greenCube = game.CreateCube(rootScene, "GreenCube", new(-5, 1, 0), Color.Green);
   var blueCube = game.CreateCube(rootScene, "BlueCube", new(5, 1, 0), Color.Blue);
-
-  var imGui = new ImGuiSystem(game.Services, game.GraphicsDeviceManager);
 }
 
 void Update(Scene rootScene, GameTime gameTime)

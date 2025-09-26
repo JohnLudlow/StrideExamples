@@ -19,10 +19,10 @@
 
     <PackageVersion Include="ImGui.NET" Version="1.91.6.1" />
 
-    <PackageVersion Include="Hexa.NET.ImGui" Version="2.2.9-prerelease" />
-    <PackageVersion Include="Hexa.NET.ImGuizmo" Version="2.2.9-prerelease" />
-    <PackageVersion Include="Hexa.NET.ImNodes" Version="2.2.9-prerelease" />
-    <PackageVersion Include="Hexa.NET.ImPlot" Version="2.2.9-prerelease" />
+    <PackageVersion Include="Hexa.NET.ImGui" Version="2.2.4" />
+    <PackageVersion Include="Hexa.NET.ImGuizmo" Version="2.2.4" />
+    <PackageVersion Include="Hexa.NET.ImNodes" Version="2.2.4" />
+    <PackageVersion Include="Hexa.NET.ImPlot" Version="2.2.4" />
 
   </ItemGroup>
 </Project>
