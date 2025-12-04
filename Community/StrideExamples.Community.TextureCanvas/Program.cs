@@ -38,9 +38,9 @@ static void Start(Game game)
 
     grid.Children.Add(CreateCard(texture, font));
 
-    foreach (var anchor in Enum.GetValues<TextureCanvas.Anchor>())
+    foreach (var anchor in Enum.GetValues<Stride.CommunityToolkit.Rendering.Utilities.Anchor>())
     {
-        foreach(var stretch in Enum.GetValues<TextureCanvas.Stretch>())
+        foreach(var stretch in Enum.GetValues<Stretch>())
         {
             using (var canvas = game.CreateTextureCanvas(new (1024, 1024)))
             {
@@ -83,7 +83,7 @@ static void Start(Game game)
     entity.Add(new UIComponent { Page = new UIPage { RootElement = grid} });
 }
 
-static Border CreateCard(Texture texture, SpriteFont spriteFont, TextureCanvas.Anchor? anchor = null, TextureCanvas.Stretch? stretch = null)
+static Border CreateCard(Texture texture, SpriteFont spriteFont, Anchor? anchor = null, Stretch? stretch = null)
 => new() {
     BorderColor = new(25, 25, 25),
     BorderThickness = new (2, 2, 2, 2),

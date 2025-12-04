@@ -5,6 +5,7 @@ using Stride.CommunityToolkit.Games;
 using Stride.CommunityToolkit.Renderers;
 using Stride.CommunityToolkit.Rendering.Compositing;
 using Stride.CommunityToolkit.Rendering.ProceduralModels;
+using Stride.CommunityToolkit.ImGui;
 using Stride.Core.Mathematics;
 using Stride.Engine;
 using Stride.Games;
@@ -18,9 +19,13 @@ using StrideExamples.Local.OcclusionTest.Managers;
 using StrideExamples.Local.OcclusionTest.UI;
 
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("ImGui Scene Editor Example");
 
 using var game = new Game();
+
+ImGuiSystem? imguiSystem = null;
+ImGuiSceneEditor? sceneEditor = null;
+
 game.Run(start: Start, update: Update);
 
 void Start(Scene rootScene)
@@ -30,27 +35,14 @@ void Start(Scene rootScene)
   game.Add3DGround();
   game.AddProfiler();
   game.AddAllDirectionLighting();
+  
+  // Add debug shapes system for selection highlighting
+  game.AddDebugShapes();
 
-  // Add Myra renderer to the graphics compositor
-  var compositor = game.SceneSystem.GraphicsCompositor;
-  if (compositor != null)
-  {
-    var gameCompositor = compositor.Game as SceneRendererCollection;
-    if (gameCompositor != null)
-    {
-      var myraRenderer = new MyraSceneRenderer();
-      gameCompositor.Children.Add(myraRenderer);
-      Console.WriteLine("Myra renderer added to compositor children");
-    }
-    else
-    {
-      Console.WriteLine("WARNING: compositor.Game is not a SceneRendererCollection");
-    }
-  }
-  else
-  {
-    Console.WriteLine("WARNING: GraphicsCompositor is null!");
-  }
+  // Initialize ImGui System (replaces Myra)
+  imguiSystem = new ImGuiSystem(game.Services, game.GraphicsDeviceManager);
+  sceneEditor = new ImGuiSceneEditor(game, rootScene);
+  Console.WriteLine("ImGui system and scene editor initialized");
 
   var font = game.Content.Load<SpriteFont>("StrideDefaultFont");
   var gameManager = new GameManager(rootScene, font);
@@ -70,17 +62,6 @@ void Update(Scene rootScene, GameTime gameTime)
 {
   var gameManager = game.Services.GetService<GameManager>();
   gameManager?.UIManager.UpdateUI();
-
-  var sceneEditor = game.Services.GetService<SceneEditorView>();
-  
-  // Initialize scene editor on first update when it's available
-  if (sceneEditor != null && sceneEditor.IsInitialized == false)
-  {
-    sceneEditor.Initialize(rootScene, game);
-    Console.WriteLine("SceneEditor initialized in Update");
-  }
-  
-  sceneEditor?.Update(game);
 }
 
 static Material CreateMaterial(Game game, Color? color = null, float specular = 1.0f, float microSurface = 0.65f)
